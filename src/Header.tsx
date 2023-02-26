@@ -16,8 +16,7 @@ flex-direction: column;
 justify-content: left;
 align-items: left;
 text-align: left;
-padding: 2rem;
-font-size: 5rem;
+font-size: 6rem;
 `;
 
 export default Header
