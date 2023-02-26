@@ -1,4 +1,5 @@
 import './App.css'
+import "./assets/fonts/fonts.css"
 import BackgroundImage from './BackgroundImage'
 import Header from './Header'
 import StartButton from './StartButton'

@@ -17,6 +17,7 @@ justify-content: left;
 align-items: left;
 text-align: left;
 font-size: 6rem;
+font-family: MysteryQuest; 
 `;
 
 export default Header
