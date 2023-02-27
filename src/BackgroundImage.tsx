@@ -11,8 +11,9 @@ const StyledImageDiv = styled.div`
   background-Image: URL(${backgroundImage});
   background-size: cover;
   background-position: center;
+  position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 
 `;
 
