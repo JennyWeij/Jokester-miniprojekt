@@ -9,16 +9,16 @@ function JokePage () {
     <div> 
       <Header />
       <BackgroundImage />
-      <div></div>
+      
       <JokeText> What did the big flower say to the little flower? 'Hey there, bud!'
      
       {/* Knappar div */}
-      <div className="ButtonsDiv">
+      <ButtonsDiv>
         <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
         <ImageNext src="src/assets/NEXT-Button.svg" />
         <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
 
-      </div>
+      </ButtonsDiv>
      </JokeText>
 
      <div>
@@ -26,15 +26,24 @@ function JokePage () {
     </div>
   )
 }
-const ImageNext = styled.img`
-width: 100px;
+const ButtonsDiv = styled.div `
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+padding: 30px;
+background: "blue";
 `
 
 const ImageNo = styled.img`
-width: 100px;
+width: 150px;
+`
+const ImageNext = styled.img`
+width: 200px;
 `
 const ImageYes = styled.img`
-width: 100px;
+width: 150px;
 `
 
 
@@ -43,7 +52,8 @@ width: 100px;
 const JokeText = styled.div`
 position: absolute;
 top: 150px;
-padding: 20px;
+left: 210px;
+padding: 50px;
 color: white;
 display: flex;
 flex-direction: column;
