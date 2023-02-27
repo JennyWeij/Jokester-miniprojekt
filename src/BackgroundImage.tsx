@@ -10,6 +10,7 @@ function BackgroundImage() {
 const StyledImageDiv = styled.div`
   background-Image: URL(${backgroundImage});
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
 
