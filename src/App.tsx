@@ -1,6 +1,7 @@
 import './App.css'
 import "./assets/fonts/fonts.css"
 import BackgroundImage from './BackgroundImage'
+import CategoryButton from './CategoryButton'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -10,6 +11,7 @@ function App() {
     <div>
        <BackgroundImage />
        <Header />
+       <CategoryButton />
        {/* <TextBox />
        <StartButton /> */}
        <Footer />

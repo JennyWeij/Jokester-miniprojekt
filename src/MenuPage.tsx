@@ -1,5 +1,7 @@
 import "./assets/fonts/fonts.css"
 import BackgroundImage from "./BackgroundImage"
+import CategoryButton from "./CategoryButton"
+import Footer from "./Footer"
 import Header from "./Header"
 
 function MenuPage() {
@@ -8,6 +10,8 @@ function MenuPage() {
     <div>
        <BackgroundImage />
        <Header />
+       <CategoryButton />
+       <Footer />
     </div>
   )
 }
