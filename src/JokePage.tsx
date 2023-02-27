@@ -8,21 +8,17 @@ function JokePage () {
   return (
     <div> 
       <Header />
-      <BackgroundImage />
-      
-      <JokeText> What did the big flower say to the little flower? 'Hey there, bud!'
-     
-      {/* Knappar div */}
-      <ButtonsDiv>
-        <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
-        <ImageNext src="src/assets/NEXT-Button.svg" />
-        <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
+        <BackgroundImage />
+         <JokeText> What did the big flower say to the little flower? <br /><br />'Hey there, bud!'
+          <br />
+          <br />
+           <ButtonsDiv>
+              <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
+              <ImageNext src="src/assets/NEXT-Button.svg" />
+              <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
 
-      </ButtonsDiv>
-     </JokeText>
-
-     <div>
-     </div>
+            </ButtonsDiv>
+          </JokeText>
     </div>
   )
 }
