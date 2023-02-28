@@ -10,9 +10,10 @@ import StartPage from './StartPage'
 const router = createBrowserRouter(
   createRoutesFromElements(
     
-    <Route path="/" element={<StartPage />}>
-      <Route index element={<MenuPage/>} />
-      <Route path="joke" element={<JokePage />} />
+    <Route path="/" element={<App />}>
+      <Route index element={<StartPage/>} />
+      <Route path="menu" element={<MenuPage />} />
+      <Route path="/joke" element={<JokePage />} />
     </Route>
   )
 );
