@@ -6,7 +6,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterDiv>
-        <p>If you didn't laugh, please contact us at; ihavenosenseofhumour@yahoo.don't</p>
+        <p>If you didn't laugh, please contact us at; fuckchucknorris@yahoo.com</p>
       </FooterDiv>
     </FooterContainer>
   )
