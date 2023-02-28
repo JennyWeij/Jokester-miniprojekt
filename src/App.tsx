@@ -1,18 +1,16 @@
 import './App.css'
 import "./assets/fonts/fonts.css"
-import BackgroundImage from './BackgroundImage'
-import Header from './Header'
-import StartButton from './StartButton'
-import TextBox from './TextBox'
+import JokePage from './JokePage'
 
 function App() {
 
   return (
     <div>
-       <BackgroundImage />
+       {/*<BackgroundImage />
        <Header />
-       <TextBox />
-       <StartButton />
+  <TextBox />
+  <StartButton />*/}
+       <JokePage />
     </div>
   )
 }
