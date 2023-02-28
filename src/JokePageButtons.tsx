@@ -14,10 +14,11 @@ function JokePageButtons () {
 }
 const ButtonsDiv = styled.div `
 display: flex;
-
+position: absolute;
 justify-content: space-between;
 align-items: center;
-margin-top: 10px;
+left: 25%;
+bottom: 0;
 padding: 30px;
 background: "blue";
 `
