@@ -50,6 +50,4 @@ font-family: Poppins-Regular;
 `;
 
 
-
-
 export default JokePageButtons

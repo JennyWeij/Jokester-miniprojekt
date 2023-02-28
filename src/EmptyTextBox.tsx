@@ -1,6 +1,24 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
+interface Joke {
+  type: string;
+  setup: string;
+  punchline: string;
+  id: number;
+}
+
 function EmptyTextBox() {
+  const [joke, setJoke] = useState<Joke>()
+  
+  useEffect(() => {
+    fetch ('https://official-joke-api.appspot.com/random_joke')
+    .then((response) => response.json())
+    .then((result) => setJoke(result))
+  }, []);
+
+  console.log(joke)
+
   return (
     <EmptyTextBoxDiv>
       <p>Testar

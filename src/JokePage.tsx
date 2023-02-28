@@ -8,9 +8,9 @@ function JokePage () {
   return (
     <div> 
       <Header />
-        <BackgroundImage />
-        <JokePageButtons />
-        <EmptyTextBox />
+      <BackgroundImage />
+      <JokePageButtons />
+      <EmptyTextBox />
     </div>
   )
 }
