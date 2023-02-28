@@ -21,8 +21,14 @@ function EmptyTextBox() {
 
   return (
     <EmptyTextBoxDiv>
-      <p>Testar
-      </p>
+           {joke ? (
+        <>
+          <div>{joke.setup}</div>
+          <div>{joke.punchline}</div>
+        </>
+      ) : (
+        <div>Loading joke...</div>
+      )}
     </EmptyTextBoxDiv>
   )
 }

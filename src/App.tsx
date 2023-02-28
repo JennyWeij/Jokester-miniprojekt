@@ -2,26 +2,23 @@ import './App.css'
 import "./assets/fonts/fonts.css"
 
 import BackgroundImage from './BackgroundImage'
-import CategoryButton from './CategoryButton'
+import EmptyTextBox from './EmptyTextBox'
 import Footer from './Footer'
 import Header from './Header'
+import JokePageButtons from './JokePageButtons'
 
-import JokePage from './JokePage'
 
 
 function App() {
 
   return (
     <div>
-       {/*<BackgroundImage />
+       <BackgroundImage />
        <Header />
-
-       <CategoryButton />´
+      <JokePageButtons />
        <Footer />
 
-  <TextBox />
-
-       <JokePage />
+    <EmptyTextBox />
 
     </div>
   )
