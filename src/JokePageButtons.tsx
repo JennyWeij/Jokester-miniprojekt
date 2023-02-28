@@ -24,6 +24,7 @@ background: "blue";
 `
 
 const ImageNo = styled.img`
+cursor: pointer;
 width: 150px;
 `
 const ImageNext = styled.img`
