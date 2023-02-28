@@ -1,20 +1,28 @@
 import './App.css'
 import "./assets/fonts/fonts.css"
+
 import BackgroundImage from './BackgroundImage'
 import CategoryButton from './CategoryButton'
 import Footer from './Footer'
 import Header from './Header'
 
+import JokePage from './JokePage'
+
+
 function App() {
 
   return (
     <div>
-       <BackgroundImage />
+       {/*<BackgroundImage />
        <Header />
-       <CategoryButton />
-       {/* <TextBox />
-       <StartButton /> */}
+
+       <CategoryButton />´
        <Footer />
+
+  <TextBox />
+
+       <JokePage />
+
     </div>
   )
 }
