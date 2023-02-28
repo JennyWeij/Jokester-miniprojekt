@@ -1,6 +1,13 @@
 import './App.css'
 import "./assets/fonts/fonts.css"
+
+import BackgroundImage from './BackgroundImage'
+import CategoryButton from './CategoryButton'
+import Footer from './Footer'
+import Header from './Header'
+
 import JokePage from './JokePage'
+
 
 function App() {
 
@@ -8,9 +15,14 @@ function App() {
     <div>
        {/*<BackgroundImage />
        <Header />
+
+       <CategoryButton />´
+       <Footer />
+
   <TextBox />
-  <StartButton />*/}
+
        <JokePage />
+
     </div>
   )
 }
