@@ -36,9 +36,7 @@ width: 200px;
 const ImageYes = styled.img`
 width: 150px;
 `
-const ImageShare = styled.img`
-width: 75px;
-`
+
 
 
 const JokeText = styled.div`
