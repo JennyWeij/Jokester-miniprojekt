@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import ShareButton from "./ShareButton";
 
 function JokePageButtons () {
   return (
     <div> 
-           <ButtonsDiv>
-              <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
-              <ImageNext src="src/assets/NEXT-Button.svg" />
-              <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
-
-            </ButtonsDiv>
+      <ButtonsDiv>
+        <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
+        <ImageNext src="src/assets/NEXT-Button.svg" />
+        <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
+        <ShareButton />
+      </ButtonsDiv>
     </div>
   )
 }
@@ -23,16 +24,20 @@ padding: 30px;
 background: "blue";
 `
 
+
 const ImageNo = styled.img`
 cursor: pointer;
 width: 150px;
 `
 const ImageNext = styled.img`
+
 width: 200px;
 `
 const ImageYes = styled.img`
 width: 150px;
 `
+
+
 
 const JokeText = styled.div`
 position: absolute;
