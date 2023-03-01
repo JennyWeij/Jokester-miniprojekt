@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import NextButton from "./NextButton";
 
 interface Joke {
   type: string;
@@ -12,12 +13,16 @@ function EmptyTextBox() {
   const [joke, setJoke] = useState<Joke>()
   
   useEffect(() => {
-    fetch ('https://official-joke-api.appspot.com/random_joke')
-    .then((response) => response.json())
-    .then((result) => setJoke(result))
+    fetch("https://official-joke-api.appspot.com/random_joke")
+      .then((response) => response.json())
+      .then((result) => setJoke(result));
   }, []);
 
-  console.log(joke)
+  const handleNewJoke = () => {
+    fetch("https://official-joke-api.appspot.com/random_joke")
+      .then((response) => response.json())
+      .then((result) => setJoke(result));
+  };
 
   return (
     <EmptyTextBoxDiv>
@@ -25,6 +30,7 @@ function EmptyTextBox() {
         <>
           <div>{joke.setup}</div>
           <div>{joke.punchline}</div>
+          <NextButton handleNewJoke={handleNewJoke} />
         </>
       ) : (
         <div>Loading joke...</div>
