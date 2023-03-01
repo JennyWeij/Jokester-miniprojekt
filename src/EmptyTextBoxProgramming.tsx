@@ -9,7 +9,7 @@ interface Joke {
   id: number;
 }
 
-function EmptyTextBox() {
+function EmptyTextBoxProgramming() {
   const [joke, setJoke] = useState<Joke>();
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function EmptyTextBox() {
           <NextButton handleNewJoke={handleNewJoke} />
         </>
       ) : (
-        <div>Loading joke...</div>
+        <div>Prepare to laugh...</div>
       )}
     </EmptyTextBoxDiv>
   );
@@ -78,4 +78,4 @@ const EmptyTextBoxDiv = styled.div`
   font-size: 2.5rem;
 `;
 
-export default EmptyTextBox
+export default EmptyTextBoxProgramming
