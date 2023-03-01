@@ -1,13 +1,31 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import styled from "styled-components";
+import MenuPage from "./MenuPage";
+import StartPage from "./StartPage";
+
 
 function StartButton() {
+  const [isStartPageVisible, setStartPageVisible] = useState(true);
+
+  const handleClick = () => {
+    setStartPageVisible(false); 
+  };
+
   return (
-    <ButtonStart>
-  <NavLink to="menu"><ImageLetsGo src="src/assets/LetsGoButton.svg" /></NavLink>
-    </ButtonStart>
-  )
-}
+    <>
+      {isStartPageVisible ? (
+         <StartPage />  
+      ) : (
+        <MenuPage />
+      )}
+      
+       <ButtonStart>
+        <ImageLetsGo src="src/assets/LetsGoButton.svg" onClick={handleClick} />
+        </ButtonStart>
+    </>
+     );
+    }
+
 const ImageLetsGo = styled.img`
 cursor: pointer;
 width: 250px;
