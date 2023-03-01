@@ -8,27 +8,22 @@ function Aside(){
     return(
         <div>
             <Header />
+            <BackgroundImage />
+            <SidebarStyle>
             <HeadingStyle>
-                <div>
-                <h4>Choose your category</h4>
-                </div>
-                
-                </HeadingStyle>
-          <BackgroundImage />
-        
-           <SidebarStyle>
-           
-            <aside>
-            <nav>
-                <ul>
-                    <li><SidebarLinks to="programming">Programming</SidebarLinks></li>
-                    <li><SidebarLinks to="general">General</SidebarLinks></li>
-                </ul>
-            </nav>
-            </aside>
-           
-           </SidebarStyle>
-          
+             <div>
+                <h4>Choose joke by category</h4>
+             </div>
+            </HeadingStyle>
+                <aside>
+                    <nav>
+                        <ul>
+                            <li><SidebarLinks to="/menu">Programming</SidebarLinks></li>
+                            <li><SidebarLinks to="/menu">General</SidebarLinks></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </SidebarStyle>
         </div>
     );
 }
@@ -41,7 +36,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 margin: 24px;
-padding: 10px 16px;
+padding: 10px 14px;
 list-style: none;
 text-decoration: none;
 border: none;
@@ -55,7 +50,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: rgba(107, 8, 72, 0.5);
-width: 20%;
+width: 16%;
 height: 100%;
 `;
 
@@ -64,11 +59,12 @@ background-color: rgba(107, 8, 72, 0.5);
 color: white;
 display: flex;
 flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start ;
+justify-content: space-between;
+align-items: center ;
+text-align: center;
 font-size: 20px;
-padding: 8px;
-font-family: Poppins-Bold;
+padding: 18px;
+font-family: Poppins-Regular;
 `;
 
 export default Aside;
