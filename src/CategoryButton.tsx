@@ -1,10 +1,19 @@
+import { useState } from 'react';
 import styled from 'styled-components';
+import JokePage from './JokePage';
 
 function CategoryButton() {
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
+  function handleButtonClick() {
+    setIsButtonClicked(true);
+  }
+  
   return (
     <>
-    <ButtonLeftTop>Programming</ButtonLeftTop>
-    <ButtonRightTop>General</ButtonRightTop>
+     <ButtonLeftTop onClick={handleButtonClick}>Programming</ButtonLeftTop>
+      <ButtonRightTop>General</ButtonRightTop>
+      {isButtonClicked && <JokePage />}
     </>
   )
 }
