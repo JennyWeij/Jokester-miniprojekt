@@ -24,6 +24,7 @@ const ButtonLeftTop = styled.button`
   top: 40%;
   left: 30%;
   color: white;
+  cursor: pointer;
   font-size: 24px;
   margin: 14px;
   padding: 12px 18px;
@@ -39,6 +40,7 @@ const ButtonRightTop = styled.button`
   top: 40%;
   left: 60%;
   color: white;
+  cursor: pointer;
   font-size: 24px;
   margin: 14px;
   padding: 12px 18px;
