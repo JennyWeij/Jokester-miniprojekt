@@ -42,8 +42,7 @@ background-color: transparent;`
 
 const Form = styled.form`
 display:flex;
-flex-direction: column;
-color: white;`
+flex-direction: column;`
 
 const Input = styled.input`
 width: 150px;
