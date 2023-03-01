@@ -42,8 +42,6 @@ function EmptyTextBox() {
     fetchJoke();
   };
 
-  console.log(joke)
-
   return (
     <EmptyTextBoxDiv>
       {joke ? (
