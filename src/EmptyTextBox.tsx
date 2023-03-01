@@ -29,6 +29,7 @@ function EmptyTextBox() {
            {joke ? (
         <>
           <div>{joke.setup}</div>
+          <br />
           <div>{joke.punchline}</div>
           <NextButton handleNewJoke={handleNewJoke} />
         </>
