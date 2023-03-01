@@ -20,29 +20,31 @@ function CategoryButton() {
 
 const ButtonLeftTop = styled.button`
   position: absolute;
-  top: 30%;
+  background-color: rgba(107, 8, 72, 1);
+  top: 40%;
   left: 30%;
-  border-radius: 4%;
-  height: 4.5rem;
-  width: 13rem;
   color: white;
-  background-color: #6b0848;
+  font-size: 24px;
+  margin: 14px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 40px;
   font-family: PoppinsRegular;
-  font-size: 2rem;
 `;
 
 
 const ButtonRightTop = styled.button`
   position: absolute;
-  top: 30%;
-  left: 55%;
-  border-radius: 4%;
-  height: 4.5rem;
-  width: 13rem;
+  background-color: rgba(107, 8, 72, 1);
+  top: 40%;
+  left: 60%;
   color: white;
-  background-color: #6b0848;
+  font-size: 24px;
+  margin: 14px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 40px;
   font-family: PoppinsRegular;
-  font-size: 2rem;
 `;
 
 export default CategoryButton
