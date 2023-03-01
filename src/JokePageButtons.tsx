@@ -4,12 +4,12 @@ import ShareButton from "./ShareButton";
 function JokePageButtons () {
   return (
     <div> 
-           <ButtonsDiv>
-              <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
-              <ImageNext src="src/assets/NEXT-Button.svg" />
-              <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
-<ShareButton />
-            </ButtonsDiv>
+      <ButtonsDiv>
+        <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
+        <ImageNext src="src/assets/NEXT-Button.svg" />
+        <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
+        <ShareButton />
+      </ButtonsDiv>
     </div>
   )
 }
