@@ -54,7 +54,7 @@ function EmptyTextBox() {
           <NextButton handleNewJoke={handleNewJoke} />
         </>
       ) : (
-        <div>Loading joke...</div>
+        <div>Prepare to laugh...</div>
       )}
     </EmptyTextBoxDiv>
   );

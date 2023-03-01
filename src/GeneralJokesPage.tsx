@@ -1,6 +1,7 @@
 import BackgroundImage from "./BackgroundImage";
 import EmptyTextBoxGeneral from "./EmptyTextBoxGeneral";
 import Header from "./Header";
+import JokePageButtons from "./JokePageButtons";
 
 
 function GeneralJokesPage () {
@@ -9,7 +10,7 @@ function GeneralJokesPage () {
       <Header />
       <BackgroundImage />
       <EmptyTextBoxGeneral /> 
-      {/* Behövs två knappar för att komma till ProgrammingJokes och en för GeneralJokes? */}
+      <JokePageButtons />
     </div>
   )
 }
