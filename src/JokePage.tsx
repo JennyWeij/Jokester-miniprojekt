@@ -1,6 +1,8 @@
 import BackgroundImage from "./BackgroundImage";
 import EmptyTextBox from "./EmptyTextBox";
+import Footer from "./Footer";
 import Header from "./Header";
+import JokePageButtons from "./JokePageButtons";
 
 
 function JokePage () {
@@ -9,6 +11,8 @@ function JokePage () {
       <Header />
       <BackgroundImage />
       <EmptyTextBox />
+      <JokePageButtons />
+      <Footer />
     </div>
   )
 }

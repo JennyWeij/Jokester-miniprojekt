@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import ShareButton from "./ShareButton";
+import ThumbDownButton from "./ThumbDownButton";
+import ThumbUpButton from "./ThumbUpButton";
 
 function JokePageButtons () {
   return (
     <div> 
       <ButtonsDiv>
-        <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
-        <ImageNext src="src/assets/NEXT-Button.svg" />
-        <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
+        <ThumbDownButton />
+        {/*<ImageNext src="src/assets/NEXT-Button.svg" />*/}
+        <ThumbUpButton />
         <ShareButton />
       </ButtonsDiv>
     </div>
