@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 function StartButton() {
   return (
     <ButtonStart>
-  <ImageLetsGo src="src/assets/LetsGoButton.svg" />
+  <NavLink to="menu"><ImageLetsGo src="src/assets/LetsGoButton.svg" /></NavLink>
     </ButtonStart>
   )
 }
