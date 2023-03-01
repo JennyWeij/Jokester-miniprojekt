@@ -31,7 +31,9 @@ function ShareButton() {
 }
 
 const ImageShare = styled.img`
-width: 75px;`
+width: 40px;
+display: flex;
+`
 
 const Button = styled.button`
 cursor: pointer;
@@ -40,13 +42,23 @@ background-color: transparent;`
 
 const Form = styled.form`
 display:flex;
-flex-direction: column;`
+flex-direction: column;
+color: white;`
 
 const Input = styled.input`
-width: 70px;`
+width: 150px;
+height: 1.5rem;
+border: none;
+margin: 0.5rem;
+background-color: #6B0848;
+color: white`
 
 const SubmitButton = styled.button`
-color: yellow;`
+width: 150px;
+height: 1.5rem;
+margin: 0.5rem;
+color: #6B0848;
+border: none;`
 
 
 export default ShareButton
