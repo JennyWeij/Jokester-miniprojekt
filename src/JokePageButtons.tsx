@@ -6,6 +6,7 @@ function JokePageButtons () {
            <ButtonsDiv>
               <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
               <ImageNext src="src/assets/NEXT-Button.svg" />
+              <ImageShare src="src/assets/Share-Button.svg" />
               <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
 
             </ButtonsDiv>
@@ -23,16 +24,22 @@ padding: 30px;
 background: "blue";
 `
 
+
 const ImageNo = styled.img`
 cursor: pointer;
 width: 150px;
 `
 const ImageNext = styled.img`
+
 width: 200px;
 `
 const ImageYes = styled.img`
 width: 150px;
 `
+const ImageShare = styled.img`
+width: 75px;
+`
+
 
 const JokeText = styled.div`
 position: absolute;
