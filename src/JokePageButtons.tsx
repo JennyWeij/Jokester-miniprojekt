@@ -1,15 +1,15 @@
 import styled from "styled-components";
+import ShareButton from "./ShareButton";
 
 function JokePageButtons () {
   return (
     <div> 
-           <ButtonsDiv>
-              <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
-              <ImageNext src="src/assets/NEXT-Button.svg" />
-              <ImageShare src="src/assets/Share-Button.svg" />
-              <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
-
-            </ButtonsDiv>
+      <ButtonsDiv>
+        <ImageNo src="src/assets/Images/ThumbDown-Button.svg" />
+        <ImageNext src="src/assets/NEXT-Button.svg" />
+        <ImageYes src="src/assets/Images/ThumbUp-Button.svg" />
+        <ShareButton />
+      </ButtonsDiv>
     </div>
   )
 }
@@ -36,9 +36,7 @@ width: 200px;
 const ImageYes = styled.img`
 width: 150px;
 `
-const ImageShare = styled.img`
-width: 75px;
-`
+
 
 
 const JokeText = styled.div`
