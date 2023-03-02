@@ -12,8 +12,9 @@ const StyledImageDiv = styled.div`
   background-size: cover;
   background-position: center;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow-y: hidden;
 
 `;
 
