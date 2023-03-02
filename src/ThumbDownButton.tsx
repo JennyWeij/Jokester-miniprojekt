@@ -30,7 +30,7 @@ top: 85%;
 background-color: transparent;
 
 @media (max-width: 768px) {
-    top: 70%;
+    top: 85%;
     max-width: 200px;
   }
 
