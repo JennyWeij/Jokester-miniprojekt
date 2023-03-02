@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function Header() {
 
-throw new Error("Something went wrong")
+
 
   return (
       <LogoDiv> 

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 function ThumbDownButton() {
-
-  throw new Error("Something went wrong")
   
   const handleClick = () => {
   };

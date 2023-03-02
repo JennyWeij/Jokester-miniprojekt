@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundImage from "./BackgroundImage";
-import ErrorBoundary from "./ErrorBoundary";
 import Header from "./Header";
 
 
@@ -16,7 +15,6 @@ function Aside(){
                 <h4>Choose joke by category</h4>
              </div>
             </HeadingStyle>
-               <ErrorBoundary>
                <aside>
                     <nav>
                         <ul>
@@ -25,7 +23,6 @@ function Aside(){
                         </ul>
                     </nav>
                 </aside>
-               </ErrorBoundary>
             </SidebarStyle>
         </div>
     );
