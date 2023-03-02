@@ -1,19 +1,16 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import JokePage from './JokePage';
 
 function CategoryButton() {
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-
-  function handleButtonClick() {
-    setIsButtonClicked(true);
-  }
-  
   return (
     <>
-     <ButtonLeftTop onClick={handleButtonClick}>Programming</ButtonLeftTop>
+    <Link to="/joke">
+     <ButtonLeftTop>Programming</ButtonLeftTop>
+    </Link>
+
+    <Link to="/generaljoke">
       <ButtonRightTop>General</ButtonRightTop>
-      {isButtonClicked && <JokePage />}
+    </Link>
     </>
   )
 }
