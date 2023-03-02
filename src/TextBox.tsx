@@ -20,7 +20,7 @@ const TextBoxDiv = styled.div`
   max-width: 35rem;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -38,6 +38,7 @@ const TextBoxDiv = styled.div`
   @media (max-width: 768px) {
     height: auto;
     max-width: 90%;
+    top: 40%;
     font-size: 1.5rem;
     padding: 1rem;
   }

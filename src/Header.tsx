@@ -22,7 +22,7 @@ const LogoDiv = styled.div`
   align-items: left;
   text-align: left;
   font-family: MysteryQuest;
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(3.5rem, 8vw, 6rem);
 `;
 
 export default Header
