@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 function TextBox() {
 
+  throw new Error("FEL")
+
   return (
     <TextBoxDiv>
       <p>

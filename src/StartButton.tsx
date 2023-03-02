@@ -4,11 +4,11 @@ import styled from "styled-components";
 function StartButton() {
 
   return (
-    <Link to="menu">
-      <ButtonStart>
-        <ImageLetsGo src="src/assets/LetsGoButton.svg" />
-      </ButtonStart>
-    </Link>
+      <Link to="menu">
+        <ButtonStart>
+          <ImageLetsGo src="src/assets/LetsGoButton.svg" />
+        </ButtonStart>
+      </Link>
   )
 }
 const ImageLetsGo = styled.img`

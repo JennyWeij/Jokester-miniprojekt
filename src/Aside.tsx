@@ -3,7 +3,6 @@ import styled from "styled-components";
 import BackgroundImage from "./BackgroundImage";
 import Header from "./Header";
 
-
 function Aside(){
     return(
         <div>
@@ -15,6 +14,7 @@ function Aside(){
                 <h4>Choose joke by category</h4>
              </div>
             </HeadingStyle>
+
                <aside>
                     <nav>
                         <ul>
