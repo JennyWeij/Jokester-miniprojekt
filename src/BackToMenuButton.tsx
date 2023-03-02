@@ -1,11 +1,21 @@
+import { useState } from "react";
 import styled from "styled-components";
+import MenuPage from "./MenuPage";
+
 
 function BackToMenuButton() {
-    return(
+  const [isButtonClicked, setIsButtonClicked]= useState(false);
 
-        <MenuButton>Back to menu</MenuButton>
+  function handleButtonClick() {
+    setIsButtonClicked(true);
+  }
 
-    );
+  return(
+        <div>
+          <MenuButton onClick={handleButtonClick}>Back to menu</MenuButton>
+          {isButtonClicked && <MenuPage />}
+        </div>
+            );
 }
 
 const MenuButton = styled.button`
