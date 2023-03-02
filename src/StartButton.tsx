@@ -14,8 +14,8 @@ max-width: 250px;
 `
 const ButtonStart = styled.div`
 position: absolute;
-top: 75%;
-left: 45%;
+top: 70%;
+left: 40%;
 
 
 `;

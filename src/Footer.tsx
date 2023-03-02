@@ -31,7 +31,7 @@ const FooterDiv = styled.div`
 `;
 
 const PText = styled.p`
-  font-size: clamp(0.4rem, 3vw, 1.3rem);
+  font-size: clamp(0.4rem, 3vw, 1rem);
   `;
 
 export default Footer
