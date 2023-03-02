@@ -36,12 +36,19 @@ display: flex;
 `
 
 const Button = styled.button`
-cursor: pointer;
-border: none;
-background-color: transparent;`
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 105%;
+  transform: translateX(-50%);
+  background-color: transparent;
+`;
+
 
 const Form = styled.form`
 display:flex;
+justify-content: right;
 flex-direction: column;`
 
 const Input = styled.input`
@@ -57,7 +64,19 @@ width: 150px;
 height: 1.5rem;
 margin: 0.5rem;
 color: #6B0848;
-border: none;`
+border: none;
+
+
+  @media (max-width: 768px) {
+    top: 70%;
+    max-width: 200px;
+  }
+
+  @media (max-width: 365px) {
+    top: 65%;
+    max-width: 150px;
+  }
+`;
 
 
 export default ShareButton

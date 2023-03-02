@@ -41,11 +41,11 @@ function EmptyTextBox(props: Props) {
           <NextButton handleNewJoke={fetchJoke} />
           <ThumbDownButton />
           <ThumbUpButton />
-          <ShareButton />
         </>
       ) : (
         <div>Prepare to laugh...</div>
-      )}
+        )}
+        <ShareButton />
     </EmptyTextBoxDiv>
    
   );

@@ -10,7 +10,7 @@ function JokePage () {
       <BackgroundImage />
 
         <EmptyTextBox category="programming" />
-      {/* <Footer /> */}
+
     </div>
   )
 }

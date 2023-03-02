@@ -26,7 +26,18 @@ border: none;
 position: absolute;
 left: 75%;
 top: 80%;
-background-color: transparent;`
+background-color: transparent;
+
+
+@media (max-width: 768px) {
+    top: 70%;
+    max-width: 200px;
+  }
+
+  @media (max-width: 365px) {
+    top: 65%;
+    max-width: 150px;
+  }`
 
 
 export default ThumbUpButton

@@ -7,8 +7,8 @@ import Header from "./Header";
 function GeneralJokesPage () {
   return (
     <div> 
-      <Header />
       <BackgroundImage />
+      <Header />
       <ErrorBoundary>
         <EmptyTextBox category="general" />
       </ErrorBoundary>
