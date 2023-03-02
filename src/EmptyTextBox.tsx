@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import ErrorBoundary from "./ErrorBoundary";
 import NextButton from "./NextButton";
 
 interface Joke {
@@ -43,7 +44,8 @@ function EmptyTextBox() {
   };
 
   return (
-    <EmptyTextBoxDiv>
+    <ErrorBoundary>
+      <EmptyTextBoxDiv>
       {joke ? (
         <>
           <div>{joke.setup}</div>
@@ -55,6 +57,7 @@ function EmptyTextBox() {
         <div>Prepare to laugh...</div>
       )}
     </EmptyTextBoxDiv>
+    </ErrorBoundary>
   );
 }
 
