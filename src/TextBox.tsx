@@ -16,7 +16,7 @@ function TextBox() {
 }
 
 const TextBoxDiv = styled.div`
-  height: 20rem;
+  height: 16rem;
   width: 35rem;
   position: absolute;
   top: 45%;

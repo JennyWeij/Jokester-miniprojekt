@@ -6,23 +6,20 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterDiv>
-        <p>If you didn't laugh, please contact us at; pissoffchucknorris@yahoo.com</p>
+        <PText>If you didn't laugh, please contact us at; pissoffchucknorris@yahoo.com</PText>
       </FooterDiv>
     </FooterContainer>
   )
 }
 
 const FooterContainer = styled.div`
-  position: relative;
-  height: 100vh;
-  overflow-y: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 `;
 
 const FooterDiv = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   height: 2rem;
   display: flex;
   justify-content: center;
@@ -30,8 +27,11 @@ const FooterDiv = styled.div`
   background-color: #6b0848;
   color: white;
   text-align: center;
-  font-size: 1.5rem;
   font-family: PoppinsRegular;
 `;
+
+const PText = styled.p`
+  font-size: clamp(0.4rem, 3vw, 1.3rem);
+  `;
 
 export default Footer
