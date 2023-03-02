@@ -47,7 +47,7 @@ function EmptyTextBox(props: Props) {
 
 const EmptyTextBoxDiv = styled.div`
   height: 20rem;
-  width: 35rem;
+  max-width: 35rem;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -62,6 +62,14 @@ const EmptyTextBoxDiv = styled.div`
   text-align: center;
   padding: 2rem;
   font-size: 2.5rem;
+
+  @media (max-width: 768px) {
+    height: auto;
+    max-width: 90%;
+    top: 40%;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 `;
 
 export default EmptyTextBox
