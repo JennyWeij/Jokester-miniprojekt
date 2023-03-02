@@ -1,5 +1,6 @@
 import "./assets/fonts/fonts.css"
 import BackgroundImage from "./BackgroundImage"
+import ErrorBoundary from "./ErrorBoundary"
 import Footer from "./Footer"
 import Header from "./Header"
 import StartButton from "./StartButton"
@@ -9,11 +10,13 @@ function StartPage() {
 
   return (
     <div>
-       <Footer />
-       <BackgroundImage />
-       <Header />
-       <TextBox />
-       <StartButton />
+      <Footer />
+      <ErrorBoundary>
+        <Header />
+      </ErrorBoundary>
+      <BackgroundImage />
+      <StartButton />
+      <TextBox />
 
     </div>
   )
