@@ -6,13 +6,12 @@ function ThumbUpButton() {
 
   const handleClick = () => {
     setIsClicked(true);
-    console.log('Klickad');
   };
 
   return (
     <>
       <Button onClick={handleClick}>
-        <ImageYes src={isClicked ? "src/assets/Images/ThumbDown-ButtonRed.png" : "src/assets/Images/ThumbDown-Button.png"} />
+        <ImageYes src={isClicked ? "src/assets/Images/ThumbDown-Button2.png" : "src/assets/Images/ThumbDown-Button.png"} />
       </Button>
     </>
   )
