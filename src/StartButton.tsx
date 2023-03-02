@@ -1,24 +1,23 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function StartButton() {
   return (
-    <ButtonStart>
-      <ImageLetsGo src="src/assets/LetsGoButton.svg" />
-    </ButtonStart>
+    <Link to="menu">
+      <ButtonStart>
+        <ImageLetsGo src="src/assets/LetsGoButton.svg" />
+      </ButtonStart>
+    </Link>
   )
 }
-
 const ImageLetsGo = styled.img`
-cursor: pointer;
-max-width: 250px;
+  cursor: pointer;
+  width: 250px;
 `
-const ButtonStart = styled.div`
-position: absolute;
-top: 70%;
-left: 40%;
-
-
+const ButtonStart = styled.button`
+  position: absolute;
+  top: 75%;
+  left: 45%;
 `;
-
 
 export default StartButton
