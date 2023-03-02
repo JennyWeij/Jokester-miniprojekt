@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 import NextButton from "./NextButton";
 
@@ -9,34 +9,40 @@ interface Joke {
   id: number;
 }
 
-function EmptyTextBox() {
-  const [joke, setJoke] = useState<Joke>()
-  
-  useEffect(() => {
-    fetch("https://official-joke-api.appspot.com/random_joke")
-      .then((response) => response.json())
-      .then((result) => setJoke(result));
-  }, []);
+interface Props {
+  category: "programming" | "general";
+}
 
-  const handleNewJoke = () => {
-    fetch("https://official-joke-api.appspot.com/random_joke")
+function EmptyTextBox(props: Props) {
+  const [joke, setJoke] = useState<Joke>();
+
+  const fetchJoke = useCallback(() => {
+    fetch(`https://official-joke-api.appspot.com/jokes/${props.category}/random`)
       .then((response) => response.json())
-      .then((result) => setJoke(result));
-  };
+      .then((result) => {
+          setJoke(result[0]);
+      });
+  }, [props.category]);
+
+  useEffect(() => {
+    fetchJoke();
+  }, [fetchJoke]);
 
   return (
-    <EmptyTextBoxDiv>
-           {joke ? (
+          <EmptyTextBoxDiv>
+      {joke ? (
         <>
           <div>{joke.setup}</div>
+          <br />
           <div>{joke.punchline}</div>
-          <NextButton handleNewJoke={handleNewJoke} />
+          <NextButton handleNewJoke={fetchJoke} />
         </>
       ) : (
-        <div>Loading joke...</div>
+        <div>Prepare to laugh...</div>
       )}
     </EmptyTextBoxDiv>
-  )
+   
+  );
 }
 
 const EmptyTextBoxDiv = styled.div`

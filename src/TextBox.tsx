@@ -16,10 +16,11 @@ function TextBox() {
 }
 
 const TextBoxDiv = styled.div`
-  height: 20rem;
-  width: 35rem;
+  height: 16rem;
+  max-width: 35rem;
+  width: 100%;
   position: absolute;
-  top: 45%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -33,6 +34,14 @@ const TextBoxDiv = styled.div`
   padding: 2rem;
   font-size: 2.5rem;
   box-shadow: 1rem 2rem 5rem #6B0810;
+
+  @media (max-width: 768px) {
+    height: auto;
+    max-width: 90%;
+    top: 40%;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 `;
 
 export default TextBox

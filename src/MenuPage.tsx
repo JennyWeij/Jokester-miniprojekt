@@ -8,10 +8,10 @@ function MenuPage() {
 
   return (
     <div>
+       <Footer />
        <BackgroundImage />
        <Header />
        <CategoryButton />
-       <Footer />
     </div>
   )
 }

@@ -6,19 +6,19 @@ import Header from "./Header";
 import JokePageButtons from "./JokePageButtons";
 
 
-function JokePage () {
+function GeneralJokesPage () {
   return (
     <div> 
-      <Footer /> 
       <BackgroundImage />
       <Header />
       <ErrorBoundary>
-        <EmptyTextBox category="programming" />
-        </ErrorBoundary>
+        <EmptyTextBox category="general" />
+      </ErrorBoundary>
       <JokePageButtons />
+      <Footer />
     </div>
   )
 }
 
 
-export default JokePage
+export default GeneralJokesPage
