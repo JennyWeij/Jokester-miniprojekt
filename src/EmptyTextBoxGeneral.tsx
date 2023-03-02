@@ -9,7 +9,7 @@ interface Joke {
   id: number;
 }
 
-function EmptyTextBox() {
+function EmptyTextBoxGeneral() {
   const [joke, setJoke] = useState<Joke>();
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function EmptyTextBox() {
       fetch("https://official-joke-api.appspot.com/random_joke")
         .then((response) => response.json())
         .then((result) => {
-          if (result.type === "programming") {
+          if (result.type === "general") {
             setJoke(result);
           } else {
             fetchJoke();
@@ -32,7 +32,7 @@ function EmptyTextBox() {
       fetch("https://official-joke-api.appspot.com/random_joke")
         .then((response) => response.json())
         .then((result) => {
-          if (result.type === "programming") {
+          if (result.type === "general") {
             setJoke(result);
           } else {
             fetchJoke();
@@ -41,6 +41,8 @@ function EmptyTextBox() {
     };
     fetchJoke();
   };
+
+  console.log(joke)
 
   return (
     <EmptyTextBoxDiv>
@@ -77,4 +79,4 @@ const EmptyTextBoxDiv = styled.div`
   font-size: 2.5rem;
 `;
 
-export default EmptyTextBox
+export default EmptyTextBoxGeneral

@@ -1,10 +1,19 @@
+import { useState } from 'react';
 import styled from 'styled-components';
+import JokePage from './JokePage';
 
 function CategoryButton() {
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
+  function handleButtonClick() {
+    setIsButtonClicked(true);
+  }
+  
   return (
     <>
-    <ButtonLeftTop>Programming</ButtonLeftTop>
-    <ButtonRightTop>General</ButtonRightTop>
+     <ButtonLeftTop onClick={handleButtonClick}>Programming</ButtonLeftTop>
+      <ButtonRightTop>General</ButtonRightTop>
+      {isButtonClicked && <JokePage />}
     </>
   )
 }
@@ -15,6 +24,7 @@ const ButtonLeftTop = styled.button`
   top: 40%;
   left: 30%;
   color: white;
+  cursor: pointer;
   font-size: 24px;
   margin: 14px;
   padding: 12px 18px;
@@ -30,6 +40,7 @@ const ButtonRightTop = styled.button`
   top: 40%;
   left: 60%;
   color: white;
+  cursor: pointer;
   font-size: 24px;
   margin: 14px;
   padding: 12px 18px;

@@ -1,20 +1,19 @@
 import BackgroundImage from "./BackgroundImage";
-import EmptyTextBox from "./EmptyTextBox";
+import EmptyTextBoxGeneral from "./EmptyTextBoxGeneral";
 import Header from "./Header";
 import JokePageButtons from "./JokePageButtons";
 
 
-function JokePage () {
+function GeneralJokesPage () {
   return (
     <div> 
       <Header />
       <BackgroundImage />
-      <EmptyTextBox />
+      <EmptyTextBoxGeneral /> 
       <JokePageButtons />
-      {/* <Footer /> */}
     </div>
   )
 }
 
 
-export default JokePage
+export default GeneralJokesPage
