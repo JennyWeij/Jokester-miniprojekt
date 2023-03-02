@@ -3,7 +3,6 @@ import EmptyTextBox from "./EmptyTextBox";
 import ErrorBoundary from "./ErrorBoundary";
 import Footer from "./Footer";
 import Header from "./Header";
-import JokePageButtons from "./JokePageButtons";
 
 
 function GeneralJokesPage () {
@@ -14,8 +13,11 @@ function GeneralJokesPage () {
       <ErrorBoundary>
         <EmptyTextBox category="general" />
       </ErrorBoundary>
-      <JokePageButtons />
+
+
+ 
       <Footer />
+
     </div>
   )
 }

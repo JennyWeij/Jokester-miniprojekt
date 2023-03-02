@@ -23,8 +23,21 @@ display: flex;
 const Button = styled.button`
 cursor: pointer;
 border: none;
-background-color: transparent;`
+position: absolute;
+left: 75%;
+top: 80%;
+background-color: transparent;
 
+
+@media (max-width: 768px) {
+    top: 80%;
+    max-width: 200px;
+  }
+
+  @media (max-width: 365px) {
+    top: 65%;
+    max-width: 150px;
+  }`
 
 
 export default ThumbUpButton

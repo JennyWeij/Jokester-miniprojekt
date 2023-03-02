@@ -1,6 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 import NextButton from "./NextButton";
+import ShareButton from "./ShareButton";
+import ThumbDownButton from "./ThumbDownButton";
+import ThumbUpButton from "./ThumbUpButton";
 
 interface Joke {
   type: string;
@@ -36,10 +39,13 @@ function EmptyTextBox(props: Props) {
           <br />
           <div>{joke.punchline}</div>
           <NextButton handleNewJoke={fetchJoke} />
+          <ThumbDownButton />
+          <ThumbUpButton />
         </>
       ) : (
         <div>Prepare to laugh...</div>
-      )}
+        )}
+        <ShareButton />
     </EmptyTextBoxDiv>
    
   );
