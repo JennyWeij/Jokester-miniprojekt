@@ -20,9 +20,7 @@ function EmptyTextBox(props: Props) {
     fetch(`https://official-joke-api.appspot.com/jokes/${props.category}/random`)
       .then((response) => response.json())
       .then((result) => {
-        if (result.type === "programming") {
-          setJoke(result);
-        }
+          setJoke(result[0]);
       });
   }, [props.category]);
 
