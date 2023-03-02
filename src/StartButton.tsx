@@ -14,10 +14,10 @@ const ImageLetsGo = styled.img`
   cursor: pointer;
   width: 250px;
 `
-const ButtonStart = styled.button`
+const ButtonStart = styled.div`
   position: absolute;
   top: 75%;
-  left: 45%;
+  left: 40%;
 `;
 
 export default StartButton
