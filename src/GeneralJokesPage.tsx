@@ -1,4 +1,5 @@
 import BackgroundImage from "./BackgroundImage";
+import BackToMenuButton from "./BackToMenuButton";
 import EmptyTextBox from "./EmptyTextBox";
 import ErrorBoundary from "./ErrorBoundary";
 import Footer from "./Footer";
@@ -13,8 +14,7 @@ function GeneralJokesPage () {
       <ErrorBoundary>
         <EmptyTextBox category="general" />
       </ErrorBoundary>
-
-
+      <BackToMenuButton />
  
       <Footer />
 
