@@ -1,4 +1,5 @@
 import BackgroundImage from "./BackgroundImage";
+import BackToMenuButton from "./BackToMenuButton";
 import EmptyTextBox from "./EmptyTextBox";
 
 
@@ -22,6 +23,8 @@ function JokePage () {
       <ErrorBoundary>
         <EmptyTextBox category="programming" />
         </ErrorBoundary>
+
+        <BackToMenuButton />
 
 
     </div>

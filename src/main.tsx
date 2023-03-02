@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import App from './App'
 import GeneralJokesPage from './GeneralJokesPage'
-import './index.css'
+
 import JokePage from './JokePage'
 import MenuPage from './MenuPage'
 import StartPage from './StartPage'
