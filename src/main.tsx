@@ -15,16 +15,15 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index element={<StartPage/>} />
       <Route path="menu" element={<MenuPage />} />
-      <Route path="/joke" element={<JokePage />} />
-      <Route path="/generaljoke" element={<GeneralJokesPage />} />
-      <Route path="/aside" element={<Aside />} />
+      <Route path="joke" element={<JokePage />} />
+      <Route path="generaljoke" element={<GeneralJokesPage />} />
+      <Route path="aside" element={<Aside />} />
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
