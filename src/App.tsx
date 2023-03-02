@@ -1,17 +1,17 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
 import "./assets/fonts/fonts.css"
-import Header from './Header'
+import ErrorBoundary from './ErrorBoundary'
 
 
 function App() {
 
   return (
     <div>
-      <Header />
-    <Outlet />
-
-
+<ErrorBoundary>
+<Outlet />
+</ErrorBoundary>
+    
     </div>
   )
 }
