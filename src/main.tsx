@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import App from './App'
+import Aside from './Aside'
 import GeneralJokesPage from './GeneralJokesPage'
 import './index.css'
 import JokePage from './JokePage'
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="menu" element={<MenuPage />} />
       <Route path="/joke" element={<JokePage />} />
       <Route path="/generaljoke" element={<GeneralJokesPage />} />
+      <Route path="/aside" element={<Aside />} />
     </Route>
   )
 );
