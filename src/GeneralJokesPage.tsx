@@ -1,5 +1,6 @@
 import BackgroundImage from "./BackgroundImage";
-import EmptyTextBoxGeneral from "./EmptyTextBoxGeneral";
+import EmptyTextBox from "./EmptyTextBox";
+import ErrorBoundary from "./ErrorBoundary";
 import Header from "./Header";
 import JokePageButtons from "./JokePageButtons";
 
@@ -9,7 +10,9 @@ function GeneralJokesPage () {
     <div> 
       <Header />
       <BackgroundImage />
-      <EmptyTextBoxGeneral /> 
+      <ErrorBoundary>
+        <EmptyTextBox category="general" />
+      </ErrorBoundary>
       <JokePageButtons />
     </div>
   )

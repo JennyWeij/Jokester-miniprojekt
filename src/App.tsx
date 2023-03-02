@@ -8,10 +8,9 @@ function App() {
 
   return (
     <div>
-<ErrorBoundary>
-<Outlet />
-</ErrorBoundary>
-    
+      <ErrorBoundary>
+      <Outlet />
+      </ErrorBoundary>
     </div>
   )
 }
