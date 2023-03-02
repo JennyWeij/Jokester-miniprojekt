@@ -24,7 +24,7 @@ const TextBoxDiv = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: #6B0848;
+  background-color: transparent;
   border-radius: 5%;
   display: flex;
   flex-direction: column;

@@ -23,11 +23,27 @@ const ButtonLeftTop = styled.button`
   color: white;
   cursor: pointer;
   font-size: 24px;
+  max-width: 13rem;
   margin: 14px;
   padding: 12px 18px;
   border: none;
   border-radius: 40px;
   font-family: PoppinsRegular;
+
+
+  @media (max-width: 768px) {
+    top: 30%;
+    left: 20%;
+    max-width: 10rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 365px) {
+    top: 20%;
+    left: 10%;
+    max-width: 8rem;
+    font-size: 0.8rem;
+  }
 `;
 
 
@@ -39,11 +55,28 @@ const ButtonRightTop = styled.button`
   color: white;
   cursor: pointer;
   font-size: 24px;
+  max-width: 10rem;
   margin: 14px;
   padding: 12px 18px;
   border: none;
   border-radius: 40px;
   font-family: PoppinsRegular;
+
+  @media (max-width: 768px) {
+    top: 30%;
+    left: 60%;
+    max-width: 10rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 365px) {
+    top: 20%;
+    left: 50%;
+    max-width: 8rem;
+    font-size: 0.8rem;
+  }
 `;
+
+
 
 export default CategoryButton
