@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import App from './App'
-import Aside from './Aside'
 import './index.css'
 import JokePage from './JokePage'
 import MenuPage from './MenuPage'
@@ -15,7 +14,6 @@ const router = createBrowserRouter(
       <Route index element={<StartPage/>} />
       <Route path="menu" element={<MenuPage />} />
       <Route path="/joke" element={<JokePage />} />
-      <Route path="/aside" element={<Aside />} />
     </Route>
   )
 );
