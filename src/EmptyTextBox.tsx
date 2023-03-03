@@ -36,10 +36,7 @@ function EmptyTextBox(props: Props) {
           <div>{joke.setup}</div>
           <br />
           <div>{joke.punchline}</div>
-
            <NextButton handleNewJoke={fetchJoke} />
-
-
         </>
       ) : (
         <div>Prepare to laugh...</div>
@@ -67,8 +64,6 @@ const EmptyTextBoxDiv = styled.div`
   text-align: center;
   padding: 2rem;
   font-size: 2.5rem;
-
-  
 
   @media (max-width: 768px) {
  

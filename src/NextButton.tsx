@@ -25,10 +25,8 @@ display: flex;
   }
 `
 const ButtonStart = styled.div`
-
 top: 85%;
 left: 40%;
-
 `;
 
 export default NextButton

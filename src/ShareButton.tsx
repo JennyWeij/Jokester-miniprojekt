@@ -32,21 +32,14 @@ function ShareButton() {
 
 const ImageShare = styled.img`
 width: 50px;
-
-
-
 `
-
 const Button = styled.button`
   cursor: pointer;
   border: none;
-
   bottom: 0;
-
   transform: translateX(-50%);
   background-color: transparent;
 `;
-
 
 const Form = styled.form`
 display:flex;

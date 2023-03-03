@@ -22,7 +22,6 @@ const DivContainer = styled.div`
  width: 40rem;
  top: 40%;
 
-
  @media (max-width: 768px) {
     height: 2rem;
     padding: 0.5rem;
@@ -32,7 +31,6 @@ const DivContainer = styled.div`
     width: 100%;
     padding: 0.5rem;
     }
-
   }
 `;
 
