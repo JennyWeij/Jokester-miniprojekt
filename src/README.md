@@ -24,7 +24,7 @@ Vi som skapade projektet heter: Martina Kreivi, Hanna Petersson och Jenny Weijla
 <br>
 
 ### Demolänk
-Klicka på denna länk för att komma till: [Jokester](https://duckduckgo.com).
+Klicka på denna länk för att komma till: [Jokester](project-jokester-app.netlify.app).
 
 <br>
 ___
