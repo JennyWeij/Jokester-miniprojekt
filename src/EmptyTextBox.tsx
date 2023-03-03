@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 import JokePageButtons from "./JokePageButtons";
 import NextButton from "./NextButton";
-import ShareButton from "./ShareButton";
 
 interface Joke {
   type: string;
@@ -45,7 +44,6 @@ function EmptyTextBox(props: Props) {
       ) : (
         <div>Prepare to laugh...</div>
         )}
-        <ShareButton />
         <JokePageButtons />
     </EmptyTextBoxDiv>
    

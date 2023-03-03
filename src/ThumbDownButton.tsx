@@ -16,7 +16,7 @@ function ThumbDownButton() {
 }
 
 const ImageNo = styled.img`
-width: 150px;
+width: 100px;
 display: flex;
 left: 60%;
 
@@ -25,8 +25,8 @@ left: 60%;
     max-width: 100px;
   }
 
-  @media (max-width: 365px) {
-    top: 65%;
+  @media (max-width: 375px) {
+    top: 80%;
     max-width: 55px;
   }
 `
@@ -34,7 +34,7 @@ left: 60%;
 const Button = styled.button`
 cursor: pointer;
 border: none;
-position: absolute;
+
 left: 10%;
 top: 85%;
 background-color: transparent;
@@ -45,7 +45,7 @@ background-color: transparent;
   }
 
   @media (max-width: 365px) {
-    top: 65%;
+    top: 82%;
     max-width: 150px;
   }`
 

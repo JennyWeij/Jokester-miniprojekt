@@ -13,12 +13,21 @@ function NextButton(props: Props) {
 }
 const ImageNext = styled.img`
 cursor: pointer;
-width: 250px;
+width: 150px;
+display: flex;
+
+@media (max-width: 768px) {
+    max-width: 150px;
+  }
+
+  @media (max-width: 365px) {
+    max-width: 40px;
+  }
 `
 const ButtonStart = styled.div`
-position: absolute;
-top: 80%;
-left: 35%;
+
+top: 85%;
+left: 40%;
 
 `;
 

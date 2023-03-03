@@ -31,16 +31,18 @@ function ShareButton() {
 }
 
 const ImageShare = styled.img`
-width: 40px;
-display: flex;
+width: 50px;
+
+
+
 `
 
 const Button = styled.button`
   cursor: pointer;
   border: none;
-  position: absolute;
+
   bottom: 0;
-  left: 105%;
+
   transform: translateX(-50%);
   background-color: transparent;
 `;

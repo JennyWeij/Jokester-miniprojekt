@@ -6,28 +6,33 @@ import ThumbUpButton from "./ThumbUpButton";
 function JokePageButtons () {
 return (
   <DivContainer>
+<ShareButton />
       <ThumbDownButton />
       <ThumbUpButton />
-      <ShareButton />
   </DivContainer>
 )
 }
 
 const DivContainer = styled.div`
  display: flex; 
- justify-content: center; 
+ justify-content: center;
+
  align-items: center;
- height: 100%; 
+ height: 50rem; 
+ width: 40rem;
+ top: 40%;
+
 
  @media (max-width: 768px) {
-    height: auto;
+    height: 2rem;
     padding: 0.5rem;
 
-    @media (max-width: 365px) {
-    height: auto;
-    width: 60%;
+    @media (max-width: 375px) {
+    height: 1rem;
+    width: 100%;
     padding: 0.5rem;
     }
+
   }
 `;
 
