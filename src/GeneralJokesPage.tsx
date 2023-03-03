@@ -15,7 +15,6 @@ function GeneralJokesPage () {
         <EmptyTextBox category="general" />
       </ErrorBoundary>
       <BackToMenuButton />
- 
       <Footer />
 
     </div>

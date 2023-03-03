@@ -12,13 +12,13 @@ function NextButton(props: Props) {
   )
 }
 const ImageNext = styled.img`
-cursor: pointer;
-width: 250px;
+  cursor: pointer;
+  width: 250px;
 `
 const ButtonStart = styled.div`
-position: absolute;
-top: 80%;
-left: 35%;
+  position: absolute;
+  top: 80%;
+  left: 35%;
 
 `;
 

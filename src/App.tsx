@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <ErrorBoundary>
-      <Outlet />
+        <Outlet />
       </ErrorBoundary>
     </div>
   )
