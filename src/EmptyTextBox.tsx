@@ -38,7 +38,6 @@ function EmptyTextBox(props: Props) {
           <br />
           <div>{joke.punchline}</div>
 
-           <JokePageButtons />
            <NextButton handleNewJoke={fetchJoke} />
 
 
@@ -47,20 +46,14 @@ function EmptyTextBox(props: Props) {
         <div>Prepare to laugh...</div>
         )}
         <ShareButton />
+        <JokePageButtons />
     </EmptyTextBoxDiv>
    
   );
 }
 
-const ButtonsContainer = styled.div `
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin-top: 2rem`
-
-
 const EmptyTextBoxDiv = styled.div`
-  height: 20rem;
+  height: 20rem; 
   max-width: 35rem;
   position: absolute;
   top: 45%;
@@ -80,17 +73,13 @@ const EmptyTextBoxDiv = styled.div`
   
 
   @media (max-width: 768px) {
+ 
     height: auto;
     max-width: 90%;
     top: 40%;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem; }
 
-    @media (max-width: 365px) {
-    top: 65%;
-    max-width: 150px;
-  }
-  }
 `;
 
 export default EmptyTextBox

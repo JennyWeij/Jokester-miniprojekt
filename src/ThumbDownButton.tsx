@@ -19,6 +19,16 @@ const ImageNo = styled.img`
 width: 150px;
 display: flex;
 left: 60%;
+
+@media (max-width: 768px) {
+    top: 85%;
+    max-width: 100px;
+  }
+
+  @media (max-width: 365px) {
+    top: 65%;
+    max-width: 55px;
+  }
 `
 
 const Button = styled.button`
