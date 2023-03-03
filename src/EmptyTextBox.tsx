@@ -1,9 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
+import JokePageButtons from "./JokePageButtons";
 import NextButton from "./NextButton";
-import ShareButton from "./ShareButton";
-import ThumbDownButton from "./ThumbDownButton";
-import ThumbUpButton from "./ThumbUpButton";
 
 interface Joke {
   type: string;
@@ -38,21 +36,19 @@ function EmptyTextBox(props: Props) {
           <div>{joke.setup}</div>
           <br />
           <div>{joke.punchline}</div>
-          <NextButton handleNewJoke={fetchJoke} />
-          <ThumbDownButton />
-          <ThumbUpButton />
+           <NextButton handleNewJoke={fetchJoke} />
         </>
       ) : (
         <div>Prepare to laugh...</div>
         )}
-        <ShareButton />
+        <JokePageButtons />
     </EmptyTextBoxDiv>
    
   );
 }
 
 const EmptyTextBoxDiv = styled.div`
-  height: 20rem;
+  height: 20rem; 
   max-width: 35rem;
   position: absolute;
   top: 45%;
@@ -70,12 +66,13 @@ const EmptyTextBoxDiv = styled.div`
   font-size: 2.5rem;
 
   @media (max-width: 768px) {
+ 
     height: auto;
     max-width: 90%;
     top: 40%;
     font-size: 1.5rem;
-    padding: 1rem;
-  }
+    padding: 1rem; }
+
 `;
 
 export default EmptyTextBox

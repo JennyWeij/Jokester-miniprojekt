@@ -15,18 +15,31 @@ function ThumbDownButton() {
 }
 
 const ImageNo = styled.img`
-  width: 150px;
-  display: flex;
-  left: 60%;
+width: 100px;
+display: flex;
+left: 60%;
+
+@media (max-width: 768px) {
+    top: 85%;
+    max-width: 100px;
+  }
+
+  @media (max-width: 375px) {
+    top: 80%;
+    max-width: 55px;
+  }
 `
 
 const Button = styled.button`
-  cursor: pointer;
-  border: none;
-  position: absolute;
-  left: 10%;
-  top: 85%;
-  background-color: transparent;
+cursor: pointer;
+border: none;
+
+left: 10%;
+top: 85%;
+background-color: transparent;
+
+`
+
 
 @media (max-width: 768px) {
     top: 85%;
@@ -34,7 +47,7 @@ const Button = styled.button`
   }
 
   @media (max-width: 365px) {
-    top: 65%;
+    top: 82%;
     max-width: 150px;
   }`
 
