@@ -12,7 +12,7 @@ function BackToMenuButton() {
 
   return(
         <div>
-          <MenuButton onClick={handleButtonClick}>Back to menu</MenuButton>
+          <MenuButton onClick={handleButtonClick}>Back</MenuButton>
           {isButtonClicked && <MenuPage />}
         </div>
             );
@@ -30,18 +30,30 @@ const MenuButton = styled.button`
   background-color: #6b0848;
   font-family: Poppins-Regular;
   font-size: 1.5rem;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    width: 11rem;
+    width: 7rem;
+    height: 2rem;
     font-size: 1.5rem;
-    left: 12%;
-    top: 4.5%;
+    left: 15%;
+    top: 4%;
     transform: translate(-50%, -50%);
   }
-  @media screen and (max-width: 568px) {
-    width: 9rem;
+  @media screen and (max-width: 481px) {
+    width: 4rem;
+    height: 2rem;
     font-size: 1.2rem;
-    left: 14%;
+    left: 10%;
+    top: 4%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 4rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    left: 12%;
     top: 5%;
     transform: translate(-50%, -50%);
   }
