@@ -14,7 +14,6 @@ function StartPage() {
        <Header />
        <TextBox />
        <StartButton />
-
     </div>
   )
 }

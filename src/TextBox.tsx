@@ -9,7 +9,7 @@ function TextBox() {
       <p>
         If you ever feel low, want to make people laugh or just laugh yourself - 
         you have come to the right place!
-        Please select your category to get started
+        Please hit the button below to select your category.
       </p>
     </TextBoxDiv>
   )

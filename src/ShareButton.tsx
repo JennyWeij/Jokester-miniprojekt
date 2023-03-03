@@ -6,12 +6,10 @@ function ShareButton() {
   
   const handleClick = () => {
     setShowInput(true);
-    console.log('Klickad')
-
   };
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log('Skickat')
   }
 
   return (
@@ -31,8 +29,8 @@ function ShareButton() {
 }
 
 const ImageShare = styled.img`
-width: 40px;
-display: flex;
+  width: 40px;
+  display: flex;
 `
 
 const Button = styled.button`
@@ -47,24 +45,24 @@ const Button = styled.button`
 
 
 const Form = styled.form`
-display:flex;
-justify-content: right;
-flex-direction: column;`
+  display:flex;
+  justify-content: right;
+  flex-direction: column;`
 
 const Input = styled.input`
-width: 150px;
-height: 1.5rem;
-border: none;
-margin: 0.5rem;
-background-color: #6B0848;
-color: white`
+  width: 150px;
+  height: 1.5rem;
+  border: none;
+  margin: 0.5rem;
+  background-color: #6B0848;
+  color: white`
 
 const SubmitButton = styled.button`
-width: 150px;
-height: 1.5rem;
-margin: 0.5rem;
-color: #6B0848;
-border: none;
+  width: 150px;
+  height: 1.5rem;
+  margin: 0.5rem;
+  color: #6B0848;
+  border: none;
 
 
   @media (max-width: 768px) {

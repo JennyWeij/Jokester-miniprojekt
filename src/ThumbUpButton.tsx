@@ -3,7 +3,6 @@ import styled from "styled-components";
 function ThumbUpButton() {
   
   const handleClick = () => {
-    console.log('Klickad')
   };
 
   return (
@@ -16,17 +15,17 @@ function ThumbUpButton() {
 }
 
 const ImageYes = styled.img`
-width: 150px;
-display: flex;
+  width: 150px;
+  display: flex;
 `
 
 const Button = styled.button`
-cursor: pointer;
-border: none;
-position: absolute;
-left: 75%;
-top: 80%;
-background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  left: 75%;
+  top: 80%;
+  background-color: transparent;
 
 
 @media (max-width: 768px) {
