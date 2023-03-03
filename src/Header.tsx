@@ -4,7 +4,7 @@ function Header() {
   return (
     <LogoDiv> 
       <p>
-      Jokester
+        Jokester
       </p>
     </LogoDiv>
   )

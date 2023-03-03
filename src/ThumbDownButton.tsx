@@ -3,7 +3,6 @@ import styled from "styled-components";
 function ThumbDownButton() {
   
   const handleClick = () => {
-    console.log('Klickad')
   };
 
   return (
@@ -39,6 +38,9 @@ left: 10%;
 top: 85%;
 background-color: transparent;
 
+`
+
+
 @media (max-width: 768px) {
     top: 85%;
     max-width: 200px;
@@ -48,8 +50,5 @@ background-color: transparent;
     top: 82%;
     max-width: 150px;
   }`
-
-
-
 
 export default ThumbDownButton

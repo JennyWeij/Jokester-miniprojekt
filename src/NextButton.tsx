@@ -12,6 +12,7 @@ function NextButton(props: Props) {
   )
 }
 const ImageNext = styled.img`
+
 cursor: pointer;
 width: 150px;
 display: flex;
@@ -27,6 +28,14 @@ display: flex;
 const ButtonStart = styled.div`
 top: 85%;
 left: 40%;
+  cursor: pointer;
+  width: 250px;
+`
+const ButtonStart = styled.div`
+  position: absolute;
+  top: 80%;
+  left: 35%;
+
 `;
 
 export default NextButton
