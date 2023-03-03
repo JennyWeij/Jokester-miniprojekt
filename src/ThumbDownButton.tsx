@@ -29,7 +29,6 @@ left: 60%;
     max-width: 55px;
   }
 `
-
 const Button = styled.button`
 cursor: pointer;
 border: none;
@@ -37,9 +36,6 @@ border: none;
 left: 10%;
 top: 85%;
 background-color: transparent;
-
-`
-
 
 @media (max-width: 768px) {
     top: 85%;

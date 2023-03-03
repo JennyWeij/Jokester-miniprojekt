@@ -28,13 +28,9 @@ display: flex;
 const ButtonStart = styled.div`
 top: 85%;
 left: 40%;
-  cursor: pointer;
-  width: 250px;
-`
-const ButtonStart = styled.div`
-  position: absolute;
-  top: 80%;
-  left: 35%;
+cursor: pointer;
+width: 250px;
+
 
 `;
 
