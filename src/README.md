@@ -1,11 +1,11 @@
 # Miniprojekt 1 - React App
-## Jokester :joy:
+## Jokester
 <br>
 
 ### Beskrivning
 ---
-Det här är ett skolprojekt, där vi i grupp fick skapa en valfri Webb-App byggt med React, TypeScript och Styled components-biblioteket.  
-Vår Webb-App heter `Jokester`, som är en skämt-App som genererar slumpmässiga skämt. Det finns två kategorier att välja mellan, Programmering eller Allmän. I appen navigerar du enkelt med att klicka på knapparna för att se nästa skämt, gilla, ogilla eller dela skämtet.
+Det här är ett skolprojekt, där vi i grupp fick skapa en valfri Webb-App byggt med React, TypeScript och valfritt CSS-bibliotek.  
+Vår Webb-App heter `Jokester`, som är en skämt-App som genererar slumpmässiga skämt. Det finns två kategorier att välja mellan, Programmering eller Allmän. I appen navigerar du enkelt med att klicka på knapparna för att exempelvis se nästa eller dela skämtet.
 
 <br>
 
@@ -17,16 +17,16 @@ Vi som skapade projektet heter: Martina Kreivi, Hanna Petersson och Jenny Weijla
 
 ### Bygg projektet
 ---
-- `npm install` - för att...
-- `npm run dev` - för att öppna projektet i localhost.... 
+
+- `npm install`.
+- `npm run dev`. 
 
 <br>
 
 ### Demolänk
-Klicka på denna länk för att komma till: [Jokester](https://duckduckgo.com).
+Klicka på denna länk för att komma till: [Jokester](project-jokester-app.netlify.app).
 
 <br>
- 
 ___
 
 ### Krav för godkänt:
@@ -35,12 +35,12 @@ ___
 - [X] React Router har använts för att   dynamiskt uppdatera URL’en.
 - [X] Git & GitHub har använts
 - [X] Projektmappen innehåller en README.md     fil- (läs ovan för mer info)
-- [ ] Uppgiften lämnas in i tid!
-- [ ] Muntlig presentation är genomförd
+- [X] Uppgiften lämnas in i tid!
+- [X] Muntlig presentation är genomförd
 
 ### Krav för väl godkänt:
 
-- [] Alla punkter för godkänt är uppfyllda
+- [X] Alla punkter för godkänt är uppfyllda
 - [X] Ett “CSS i JS“ lib skall användas för at skriva CSS (ex JSS, Styled-Components, mm).
-- [] En ”ErrorBoundry”- komponent ska skapas och användas på minst 3 ställen.
+- [X] En ”ErrorBoundry”- komponent ska skapas och användas på minst 3 ställen.
 - [X] Data från ett web-API hämtas och visas på sidan.
